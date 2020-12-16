@@ -4,7 +4,10 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  width: 120rem;
+  margin: auto;
+  background: white; }
 
 body {
   font-family: var(--font-family);
@@ -31,12 +34,23 @@ img {
 
 .grid__container {
   display: grid;
-  grid: "picture header" auto "aside main" 1fr / 350px auto; }
+  grid: "picture header" auto "aside main" 1fr / 350px auto;
+  height: 100vh; }
 
 header {
   grid-area: header;
   min-height: 25rem;
-  background: blue; }
+  background: var(--colorBlue);
+  color: var(--colorGrey); }
+  header h1 {
+    font-size: 4rem; }
+  header h2 {
+    font-size: 2.5rem; }
+  header h1,
+  header h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3rem; }
 
 .picture {
   grid-area: picture;
@@ -52,8 +66,7 @@ header {
 
 .aside {
   grid-area: aside;
-  background: chartreuse;
-  height: 100vh; }
+  background: chartreuse; }
 
 .main {
   grid-area: main;
