@@ -1,0 +1,46 @@
+//impoter les fichier _.scss
+@import "reset";
+@import "base";
+
+//répartition des grids dans l'ensemble de la page
+.grid__container {
+  display: grid;
+  grid:
+    "picture header" auto
+    "aside main" 1fr
+    / 350px auto;
+}
+
+//The header
+header {
+  grid-area: header;
+  min-height: 25rem;
+  background: blue;
+}
+
+//The picture
+.picture {
+  grid-area: picture;
+  background-image: url(img/photo-david-caignaert.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+//The aside
+.aside {
+  grid-area: aside;
+  background: chartreuse;
+  height: 100vh;
+}
+
+//The main
+.main {
+  grid-area: main;
+  background: cyan;
+}

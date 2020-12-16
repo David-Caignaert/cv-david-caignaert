@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-family);
+  color: var(--colorGrey);
+  background: var(--colorBlue); }
+
+p {
+  margin: 1rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0; }
+
+a {
+  color: --colorGrey;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.grid__container {
+  display: grid;
+  grid: "picture header" auto "aside main" 1fr / 350px auto; }
+
+header {
+  grid-area: header;
+  min-height: 25rem;
+  background: blue; }
+
+.picture {
+  grid-area: picture;
+  background-image: url(img/photo-david-caignaert.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  justify-self: center;
+  align-self: center; }
+
+.aside {
+  grid-area: aside;
+  background: chartreuse;
+  height: 100vh; }
+
+.main {
+  grid-area: main;
+  background: cyan; }
