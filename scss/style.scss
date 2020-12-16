@@ -8,7 +8,7 @@
   grid:
     "picture header" auto
     "aside main" 1fr
-    / 350px auto;
+    / 1fr 2fr;
 
   height: 100vh;
 }
@@ -48,13 +48,25 @@ header {
 }
 
 //The aside
-.aside {
+aside {
   grid-area: aside;
-  background: chartreuse;
+  background: var(--colorBlue);
+  color: var(--colorGrey);
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    text-align: center;
+  }
 }
 
 //The main
-.main {
+main {
   grid-area: main;
   background: cyan;
 }

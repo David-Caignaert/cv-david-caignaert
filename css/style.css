@@ -34,7 +34,7 @@ img {
 
 .grid__container {
   display: grid;
-  grid: "picture header" auto "aside main" 1fr / 350px auto;
+  grid: "picture header" auto "aside main" 1fr / 1fr 2fr;
   height: 100vh; }
 
 header {
@@ -64,10 +64,20 @@ header {
   justify-self: center;
   align-self: center; }
 
-.aside {
+aside {
   grid-area: aside;
-  background: chartreuse; }
+  background: var(--colorBlue);
+  color: var(--colorGrey); }
+  aside h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4rem; }
+  aside p {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    text-align: center; }
 
-.main {
+main {
   grid-area: main;
   background: cyan; }
